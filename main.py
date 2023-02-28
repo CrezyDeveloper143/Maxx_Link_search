@@ -114,7 +114,7 @@ async def message_handler(event):
                                     f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie')], [
                             Button.url('Click To Check Release Date 📅',
                                     f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie%20Release%20Date')],[Button.url('🍿Request to admin🍿',
-                                    f'https://t.me/RequestyourMovieherebot')]
+                                    f'https://t.me/TG_TR_support_bot')]
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
             await asyncio.sleep(Config.AUTO_DELETE_TIME)
@@ -137,7 +137,7 @@ async def message_handler(event):
         
         newbutton = [Button.url('🍿update channel 🍿',
 
-                                    f'https://t.me/rk_update')]
+                                    f'https://t.me/Technical_rakesh_01')]
         await txt.delete()
         result = await event.reply(message, link_preview=False)
         await asyncio.sleep(Config.AUTO_DELETE_TIME)
